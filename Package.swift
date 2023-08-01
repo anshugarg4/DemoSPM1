@@ -21,11 +21,9 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .target(
             name: "DemoSPM1",
-            dependencies: [
-               // .product(name: "FirebaseAuth", package: "Firebase")
-            ]),
+            dependencies: []),
         .testTarget(
-            name: "DemoS1PMTests",
+            name: "DemoSPM1Tests",
             dependencies: ["DemoSPM1"]),
     ]
 )
